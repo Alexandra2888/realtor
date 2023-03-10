@@ -10,6 +10,8 @@ import {
 import { db } from "../firebase";
 import { doc, serverTimestamp, setDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);

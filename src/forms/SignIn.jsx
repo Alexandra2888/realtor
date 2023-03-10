@@ -3,6 +3,8 @@ import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
 import OAuth from "../pages/OAuth";
+import { toast } from "react-toastify";
+
 
 const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -110,6 +112,6 @@ const SignIn = () => {
       </div>
     </section>
   );
-};
+}
 
 export default SignIn;

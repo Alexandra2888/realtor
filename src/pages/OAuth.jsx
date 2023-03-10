@@ -3,10 +3,12 @@ import { doc, getDoc, serverTimestamp, setDoc } from "firebase/firestore";
 import { FcGoogle } from "react-icons/fc";
 import { db } from "../firebase";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
 
 
 const OAuth = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   async function onGoogleClick() {
     try {
       const auth = getAuth();

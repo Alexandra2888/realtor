@@ -2,6 +2,8 @@ import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import OAuth from "../pages/OAuth";
+import { toast } from "react-toastify";
+
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
